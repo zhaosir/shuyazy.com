@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body{ margin:0; padding:0; background:#EAEAEA; font-family:"宋体"; position:relative;}
+div,span,p,h1,h2,h3,h4,h5,ul,li,img,ol,dl,dt,dd,table,tr,td,a,button,input,textarea{ margin:0; padding:0; list-style:none; border:0;}
+a{ text-decoration:none;}
+a:hover{ color:#333;}
+textarea{resize:none}
+
+
+/*导航*/
+.nav{ width:958px; height:110px; margin:0 auto; padding-top:30px; padding-left:40px; padding-right:4px;}
+.logo{ float:left;}
+.nav .icon1,.nav .icon2{ float:right; margin-left:70px;}
+
+/*banner*/
+.banner{ width:1002px; height:332px; margin:0 auto;}
+
+.banner span{ width:24px; height:4px; background:#BBBBBB; display:inline-block; float:left; margin-left:10px;}
+.banner .huadong1{ margin-left:44%; background:#81B92D;}
+
+
+/*con区域*/
+.con{ width:1002px; height:860px; margin:0 auto;}
+.con .topborder{ width:1002px; height:2px; background:url(../images/line.jpg) repeat-x;}
+.con .conl{ width:827px; height:780px; float:left; padding-top:16px; float:left;}
+.con .fabu{ border:0; border-radius:5px; width:817px; height:142px; padding:5px 5px 5px 5px; color:#999;}
+.con .textcss{ padding-top:14px;}
+.con .textcss li{ float:left;}
+.con .textcss .smile{ width:28px; height:28px; margin-left:10px; margin-top:6px;}
+.con .textcss .pic{ width:30px; height:24px; margin-top:8px; margin-left:10px;}
+.con .textcss .nicheng{ width:138px; height:41px; background:url(../images/talk/nicheng.jpg) no-repeat; padding-left:30px; margin-left:450px;}
+.con .textcss .fabiao{ width:104px; height:42px; float:right;}
+.con .talkuser{ margin-top:20px; clear:both; overflow:hidden;}
+.con .talkuser li{ float:left;}
+.con .talkuser .talkcon{ width:744px; height:115px; margin-left:10px;}
+.con .talkuser .talkcon .talkbg_l{ width:24px; height:72px; background:url(../images/talk/talkbg_l.jpg) no-repeat; float:left;}
+.con .talkuser .talkcon .talkcontain{ width:704px; height:60px; border-bottom:1px solid #D5D5D5; border-top:1px solid #D5D5D5; float:left; padding-top:10px; padding-left:10px;}
+.con .talkuser .talkcon .talkbg_r{ width:6px; height:72px; background:url(../images/talk/talkbg_r.jpg) no-repeat; float:left;}
+.con .talkuser .talkcon .timebg_l{ width:8px; height:43px; background:url(../images/talk/timebg_l.jpg) no-repeat; float:left; margin-left:16px;}
+.con .talkuser .talkcon .timein{ width:714px; height:42px; border-bottom:1px solid #D5D5D5; float:left; background:#FFF;}
+.con .talkuser .talkcon .timebg_r{ width:6px; height:43px; background:url(../images/talk/timebg_r.jpg) no-repeat; float:left;}
+
+
+
+.con .conr{ float:left; margin-top:14px;}
+.con .conr .rightlogo{ margin-left:20px;}
+.con .conr .rightpic{ margin-left:10px; margin-top:26px;}
+
+
+
+
+
+
+
+
+.con .pages{ width:872px; height:auto;}
+.con .pages .lastpage,.con .pages .nextpage{ width:34px; height:34px; float:left; margin-left:148px; background:#EDEDED; border:1px solid #D5D5D5;}
+.con .pages .lastpage a,.con .pages .nextpage a{ width:34px; height:34px; display:block;}
+.con .pages .nextpage{ margin-left:10px;}
+.con .pages .page li{ width:34px; height:34px; float:left; margin-left:10px; background:#EDEDED; border:1px solid #D5D5D5;}
+.con .pages .page li a{ width:34px; height:34px; display:block; line-height:34px; text-align:center; color:#333;}
+.con .pages .page li a:hover{ background:#81B92D;}
+.con .pages .tiaozhuan{ height:34px; line-height:34px; text-align:center; float:left; color:#333; font-size:14px; font-weight:normal; margin-left:10px;}
+.con .pages textarea{ width:40px; height:34px; line-height:34px; padding-left:6px;  background:#EDEDED; border:1px solid #D5D5D5; float:left;}
+.con .pages span a{ width:34px; height:34px; line-height:34px; text-align:center; background:#EDEDED; border:1px solid #D5D5D5; margin-left:10px; font-size:16px; display:block; float:left;}
+
+
+
+
+
+
+
+/*footer区域*/
+.footer{ width:1002px; height:70px; background:url(../images/line.jpg) repeat-x left top; margin:0 auto; padding-top:8px;}
+.footer p{ width:1002px; text-align:center; line-height:26px; font-size:14px; color:#999999;}
+
+/*rightline联系*/
+.rightline{ position:absolute; right:8%; bottom:164px; position:fixed;}
+

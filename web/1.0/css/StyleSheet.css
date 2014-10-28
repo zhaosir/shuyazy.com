@@ -1,0 +1,25 @@
+﻿*{ margin:0px; padding:0px;}
+a{ text-decoration:none;}
+.clear{ clear:both;}
+a img{ border:none;}
+
+.floatL{ float:left;}
+.floatR{ float:right;}
+* {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+A {
+	TEXT-DECORATION: none
+}
+.clear {
+	CLEAR: both
+}
+A IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.floatL {
+	FLOAT: left
+}
+.floatR {
+	FLOAT: right
+}

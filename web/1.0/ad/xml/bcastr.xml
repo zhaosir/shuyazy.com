@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bcaster autoPlayTime="3">
+  <item id="1" item_url="images/ad0.jpg" link="http://www.shuyazy.com">
+  </item>
+  <item id="2" item_url="images/ad1.jpg" link="http://www.shuyazy.com">
+  </item>
+  <item id="3" item_url="images/ad2.jpg" link="http://www.shuyazy.com">
+  </item>
+  <item id="5" item_url="images/ad3.jpg" link="http://www.shuyazy.com">
+  </item>
+  <item id="8" item_url="images/8http_imgload27.jpg" link="images/8http_imgload27.jpg" />
+  <item id="9" item_url="images/10http_imgload24.jpg" link="images/10http_imgload24.jpg" />
+  <item id="10" item_url="images/11http_imgload28.jpg" link="images/11http_imgload28.jpg" />
+</bcaster>

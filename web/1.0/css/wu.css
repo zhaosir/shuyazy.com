@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  首页 图片产品展示*/
+.sycpzsKJ{ float:left; margin-left:5px; margin-top:10px; display:inline;}
+.sycpzsPic{ width:98px; height:74px; border:#CCCCCC 1px solid; padding-top:4px; padding-left:1px;}
+.sycpzsTitle{ width:96px; height:20px; text-align:center;}
+
+
+
+/* 产品展示css    */
+.bt{  height:33px; background-image:url(../images/InfoList_t_bg.jpg); background-repeat:repeat-x;}
+.bt_cplm{ FLOAT: left; MARGIN-LEFT: 20px; MARGIN-RIGHT: 20px; margin-top:10px; cursor:pointer;COLOR: #7e7e7e; FONT-SIZE: 12px; FONT-WEIGHT: bold}
+#cpzs1{ height:400px;}
+#cpzs2{ height:400px;}
+#cpzs3{ height:400px;}
+#cpzs4{ height:400px;}
+
+/* 分页 */
+.fy{ height:30px;}
+
+.unblock{ display:none}
+.block{ display:block;}
+
+.cpzsKJ{ float:left; margin-left:35px; margin-top:20px; display:inline;}
+.cpzsPic{ width:146px; height:105px; border:#CCCCCC 1px solid; padding-top:6px; padding-left:4px;}
+.cpzsTitle{ width:150px; height:20px; text-align:center;}
+
+
+/* 产品 详情 */
+.cpxq{ height:600px;}
+.cpName{ height:30px; font-size:14px; font-weight:bold; text-align:center; overflow:hidden; padding-top:5px; color:#7e7e7e; border-bottom:#999999 solid 1px;margin-bottom:10px;}
+
+.cpPicK{ width:600px; height:400px;}
+.cpPic{ width:400px; height:300px; margin-left:40px; float:left;}
+.updown{ width:25px; float:left; height:100px; padding-top:110px; margin-left:20px;}
+.cpContent{ width:600px; height:300px; float:left}
+
+
+/* 底部 */
+
+/*  foot */
+.foot{ margin: -17px auto 10px auto ; height:45px; padding-top:10px;width:892px; background-image:url(../images/footbj.jpg);}
+.foot p{line-height:200%;}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body{ margin:0; padding:0; background:#EAEAEA; font-family:"宋体"; position:relative;}
+div,span,p,h1,h2,h3,h4,h5,ul,li,img,ol,dl,dt,dd,table,tr,td,a,button,input{ margin:0; padding:0; list-style:none; border:0;}
+a{ text-decoration:none;}
+a:hover{ color:#333;}
+
+
+/*导航*/
+.nav{ width:958px; height:110px; margin:0 auto; padding-top:30px; padding-left:40px; padding-right:4px;}
+.logo{ float:left;}
+.nav .icon1,.nav .icon2{ float:right; margin-left:70px;}
+
+/*banner*/
+.banner{ width:1002px; height:332px; margin:0 auto;}
+
+.banner span{ width:24px; height:4px; background:#BBBBBB; display:inline-block; float:left; margin-left:10px;}
+.banner .huadong1{ margin-left:44%; background:#81B92D;}
+
+/*con区域*/
+.con{ width:1002px; height:220px; padding-top:47px; margin:0 auto;}
+.con .conl{ width:616px; height:218px; float:left;}
+.con .conl .conl_l{ width:4px; height:218px; background:url(../images/conl.jpg) no-repeat left center; float:left;}
+.con .conl .conl_l2{ width:4px; height:218px; background:url(../images/conl.jpg) no-repeat left center; float:left; margin-left:12px;}
+.con .conl .conl_l3{ width:4px; height:218px; background:url(../images/conl.jpg) no-repeat left center; float:left; margin-left:12px;}
+.con .conl .conl_c{ width:188px; height:218px; background:url(../images/conc.jpg) repeat-x; float:left;}
+.con .conl .conl_r{ width:4px; height:218px; background:url(../images/conr.jpg) no-repeat left center; float:left;}
+.con .conl .conl_c a img{ margin-top:58px; padding-left:72px;}
+.con .conl .conl_c h3{ font-size:22px; width:188px; text-align:center; padding-top:54px; font-weight:normal;}
+.con .conl .conl_c .a1 a{ color:#FF4242;}
+.con .conl .conl_c .a2 a{ color:#95C359;}
+.con .conl .conl_c .a3 a{ color:#6BABDD;}
+.con .conl .conl_c h3 a:hover{ color:#333;}
+
+.con .conr{ width:370px; height:218px; float:right;}
+.con .conr .conrl{ width:4px; height:218px; background:url(../images/conrl.jpg) no-repeat left center; float:left;}
+.con .conr .conrc{ width:362px; height:218px; background:url(../images/conrc.jpg) repeat-x left center; float:left;}
+.con .conr .conrc dl{ width:362px;}
+.con .conr .conrc dl dt{ height:100px; line-height:100px; padding-left:100px; font-size:18px; float:left;}
+.con .conr .conrc dl dd{ padding:18px 90px 0 0; float:right;}
+.con .conr .conrc dl dt a{ color:#90BC59; font-size:22px;}
+.con .conr .conrc dl dt a:hover{ color:#333;}
+.con .conr .conrc ul{ width:362px; height:80px; padding:30px 0 0 0; clear:both;}
+.con .conr .conrc ul li{ float:left; margin-left:26px;}
+.con .conr .conrc ul .rexian{ font-size:18px; color:#3B3B3B; font-family:"微软雅黑"; line-height:30px;}
+.con .conr .conrr{ width:4px; height:218px; background:url(../images/conrr.jpg) no-repeat left center; float:left;}
+
+
+/*main区域*/
+.main{ width:1002px; height:214px; margin:0 auto; padding-top:46px;}
+.main .mainl{ width:619px; height:116px; float:left}
+.main .mainl h3{ width:619px; background:url(../images/line.jpg) repeat-x left bottom; height:26px; color:#8D8D8E; font-weight:normal;}
+.main .mainl ul{ padding-top:24px;}
+.main .mainl ul li{ float:left; margin-right:30px;}
+.main .mainr{ width:366px; height:116px; float:right;}
+.main .mainr h3{ width:366px; background:url(../images/line.jpg) repeat-x left bottom; height:26px; color:#8D8D8E; font-weight:normal;}
+.main .mainr p{ padding-top:24px; font-size:16px;}
+.main .mainr p a{ color:#FD693A;}
+
+/*footer区域*/
+.footer{ width:1002px; height:70px; background:url(../images/line.jpg) repeat-x left top; margin:0 auto; padding-top:8px;}
+.footer p{ width:1002px; text-align:center; line-height:26px; font-size:14px; color:#999999;}
+
+/*rightline联系*/
+.rightline{ position:absolute; right:8%; bottom:164px; position:fixed;}
+
+
+
+
+
+
+
+
+
+

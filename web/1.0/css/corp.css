@@ -1,0 +1,135 @@
+BODY {
+	LINE-HEIGHT: 23px; BACKGROUND-COLOR: #439ed8; FONT-SIZE: 12px
+}
+.wrap {
+	MARGIN: 0px auto; WIDTH: 1000px
+}
+.content {
+	BACKGROUND-IMAGE: url(../images/c_bg.jpg); BACKGROUND-COLOR: #f7f7f7; MARGIN: 20px auto; WIDTH: 892px; BACKGROUND-REPEAT: repeat-x
+}
+.logo {
+	BACKGROUND-IMAGE: url(www.kpages.com); FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/logo1.png'); WIDTH: 236px; FLOAT: left; HEIGHT: 132px; MARGIN-RIGHT: 20px; image: url(../images/logo1.png)
+}
+.tools {
+	HEIGHT: 74px
+}
+.nav LI {
+	LINE-HEIGHT: 60px; LIST-STYLE-TYPE: none; FLOAT: left; MARGIN-LEFT: 10px; FONT-SIZE: 14px; FONT-WEIGHT: bold; MARGIN-RIGHT: 10px
+}
+.nav LI SPAN {
+	COLOR: #bebdbd; MARGIN-LEFT: 10px; FONT-SIZE: 10px; MARGIN-RIGHT: 10px
+}
+.nav LI A {
+	COLOR: #545454
+}
+.c_wrap {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #fcfcfc; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.c_left {
+	WIDTH: 236px; FLOAT: left
+}
+.contact {
+	BACKGROUND-IMAGE: url(../images/l_bg.jpg); PADDING-BOTTOM: 10px; PADDING-LEFT: 65px; WIDTH: 171px; BACKGROUND-REPEAT: repeat-y; MARGIN-BOTTOM: 20px; HEIGHT: 220px; PADDING-TOP: 10px
+}
+.contact H3 {
+	COLOR: #6b6b6b; FONT-SIZE: 14px
+}
+.contact P {
+	MARGIN-BOTTOM: 12px; COLOR: #a94848
+}
+.box {
+	MARGIN: 10px
+}
+.c_right {
+	WIDTH: 639px; FLOAT: left
+}
+.l_box {
+	PADDING-BOTTOM: 10px; MARGIN-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.l_box H2 {
+	BACKGROUND-IMAGE: url(../images/Index3_06.jpg); PADDING-LEFT: 20px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px 2px; COLOR: #2d2d2d; FONT-SIZE: 14px
+}
+.l_box H2 A {
+	FLOAT: right; FONT-SIZE: 12px; FONT-WEIGHT: 300
+}
+.news {
+	WIDTH: 270px; MARGIN-LEFT: -10px
+}
+.news UL {
+	PADDING-TOP: 5px
+}
+.news UL LI {
+	LIST-STYLE-TYPE: none; PADDING-LEFT: 15px
+}
+.news UL LI SPAN {
+	FLOAT: right; COLOR: #5e5d5d
+}
+.news UL LI A {
+	COLOR: #5e5d5d
+}
+.imgBox {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 90px; PADDING-RIGHT: 10px; FLOAT: left; HEIGHT: 90px; PADDING-TOP: 10px
+}
+.imgBox IMG {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; WIDTH: 87px; PADDING-RIGHT: 3px; HEIGHT: 87px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 3px
+}
+.footer {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.map A {
+	LINE-HEIGHT: 35px; FLOAT: left; COLOR: #aa0000; MARGIN-RIGHT: 6px
+}
+.map SPAN {
+	LINE-HEIGHT: 35px; FLOAT: left; COLOR: #aa0000; MARGIN-RIGHT: 6px
+}
+.category {
+	BACKGROUND-IMAGE: url(../images/Info_titlebg.jpg); LINE-HEIGHT: 40px; PADDING-LEFT: 35px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: -3px 0px; COLOR: #b10000; FONT-SIZE: 14px; FONT-WEIGHT: 300
+}
+.category A {
+	FLOAT: right; COLOR: #797979; MARGIN-RIGHT: 25px
+}
+.info_wrap {
+	BORDER-BOTTOM: #bbb7b7 1px solid; BORDER-LEFT: #bbb7b7 1px solid; PADDING-BOTTOM: 10px; MARGIN-TOP: 5px; MIN-HEIGHT: 450px; PADDING-LEFT: 10px; WIDTH: 617px; PADDING-RIGHT: 10px; MARGIN-LEFT: 1px; BORDER-TOP: #bbb7b7 1px solid; BORDER-RIGHT: #bbb7b7 1px solid; PADDING-TOP: 10px
+}
+.info_wrap P {
+	LINE-HEIGHT: 26px; MARGIN-TOP: 10px; TEXT-INDENT: 24px; COLOR: #393939
+}
+.cate_title {
+	BACKGROUND-IMAGE: url(../images/InfoList_t_bg.jpg); BACKGROUND-REPEAT: repeat-x; HEIGHT: 33px
+}
+.cate_title LI {
+	LINE-HEIGHT: 40px; LIST-STYLE-TYPE: none; FLOAT: left; MARGIN-LEFT: 20px; MARGIN-RIGHT: 20px
+}
+.cate_title LI A {
+	COLOR: #7e7e7e; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.list {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 0px
+}
+.list UL LI {
+	BORDER-BOTTOM: #cccccc 1px dashed; LINE-HEIGHT: 30px; LIST-STYLE-TYPE: none
+}
+.list UL LI SPAN {
+	FLOAT: right
+}
+.list UL LI A {
+	COLOR: #393939
+}
+.list UL LI SPAN {
+	FLOAT: right
+}
+.imglist {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 0px
+}
+.imglist UL LI IMG {
+	WIDTH: 80px; HEIGHT: 75px
+}
+.imglist UL LI {
+	MARGIN: 5px; FLOAT: left
+}
+.info_wrap UL {
+	PADDING-BOTTOM: 20px; LIST-STYLE-TYPE: none; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 20px
+}
+.info_wrap UL LI {
+	MARGIN-BOTTOM: 15px
+}
