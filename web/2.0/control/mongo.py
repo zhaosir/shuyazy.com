@@ -10,9 +10,8 @@ class mongoConn:
 		self.conn=None
 
 	def __enter__(self):
-		db=setting.mongo['db']
 		self.conn=pymongo.Connection(setting.mongo['host'],setting.mongo['port'])
-		return self.conn.shuyazy
+		return self.conn
 
 	def __exit__(self,*args):
 		self.conn.disconnect()

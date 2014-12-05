@@ -9,5 +9,5 @@ from mongo import mongoConn
 logger = logging.getLogger(__name__)
 
 def get_ads():
-	with mongoConn() as db:
-		return db.ads.find()
+	with mongoConn() as conn:
+		return conn.shuyazy.ads.find()
