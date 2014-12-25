@@ -11,7 +11,9 @@ class mongoConn:
 
 	def __enter__(self):
 		self.conn=pymongo.Connection(setting.mongo['host'],setting.mongo['port'])
-		return self.conn
+		self.db = self.conn[setting.mongo['db']]
+#self.db.authenticate(setting.mongo['uname'],setting.mongo['passwd'])
+		return self.db 
 
 	def __exit__(self,*args):
 		self.conn.disconnect()
