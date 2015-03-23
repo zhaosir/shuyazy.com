@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+COOKIE_SECRET='df61d7e3f7899ad08b051b974763b609'
+
 mongo={
 	'host':'10.0.177.30',
 	'port':27017,
