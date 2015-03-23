@@ -14,8 +14,8 @@ define("project_path",default=sys.path[0],help="project path")
 
 options.parse_command_line()
 
-URLS =((r'www.test.com',
-		(r'/test','handler.index.IndexHandler'),
+URLS =((r'www\.test\.com',
+		(r'/?|index?|index.html?','handler.index.IndexHandler'),
 	   ),
 )
 
@@ -31,7 +31,6 @@ class Application(web.Application):
 			"cookie_secret":_setting.COOKIE_SECRET,
 			"xsrf_cookies":True
 		}
-		print settings
 		web.Application.__init__(self,**settings)
 		for spec in URLS:
 			self.add_handlers(spec[0],spec[1:])
