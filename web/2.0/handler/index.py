@@ -8,4 +8,5 @@ from .base import BaseHandler
 
 class IndexHandler(BaseHandler):
 	def get(self):
-		pass
+		print 'xxxx'
+		self.render('index.html')
