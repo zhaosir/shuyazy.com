@@ -1,7 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>舒雅纸业</title>
+<link type="text/css" rel="stylesheet" href="{{static_url('css/style.css')}}">
+</head>
+
+<body>
 {% include header.html %}
 <div class="banner">
 	<ul class="bannerin">
-    	<li class="first_banner"><a href="#"><img src="images/banner.jpg" width="1002" height="316"></a></li>
+    	<li class="first_banner"><a href="#"><img src="{{static_url('images/banner.jpg')}}" width="1002" height="316"></a></li>
     </ul>
     <span class="huadong1"></span>
     <span></span>
@@ -13,21 +22,21 @@
 	<div class="conl">
 		<div class="conl_l"></div>
     	<div class="conl_c">
-        	<a href="detail.html"><img src="images/product.jpg" width="42" height="27"></a>
+        	<a href="detail.html"><img src="{{static_url('images/product.jpg')}}" width="42" height="27"></a>
             <h3 class="a1"><a href="detail.html">最新产品</a></h3>
         </div>
     	<div class="conl_r"></div>
         
         <div class="conl_l2"></div>
         <div class="conl_c">
-        	<a href="detail.html"><img style="margin-top:48px;" src="images/product2.jpg" width="50" height="38"></a>
+        	<a href="detail.html"><img style="margin-top:48px;" src="{{static_url('images/product2.jpg')}}" width="50" height="38"></a>
             <h3 class="a2"><a href="detail.html">产品中心</a></h3>
         </div>
     	<div class="conl_r"></div>
         
         <div class="conl_l3"></div>
         <div class="conl_c">
-        	<a href="about.html"><img style="margin-top:44px;" src="images/product3.jpg" width="50" height="42"></a>
+        	<a href="about.html"><img style="margin-top:44px;" src="{{static_url('images/product3.jpg')}}" width="50" height="42"></a>
             <h3 class="a3"><a href="about.html">企业动态</a></h3>
         </div>
     	<div class="conl_r"></div>
@@ -37,11 +46,11 @@
         <div class="conrc">
         	<dl>
             	<dt><a href="aboutus.html">关于我们</a></dt>
-                <dd><a href="aboutus.html"><img src="images/aboout.jpg" width="68" height="68"></a></dd>
+                <dd><a href="aboutus.html"><img src="{{static_url('images/aboout.jpg')}}" width="68" height="68"></a></dd>
             </dl>
             <ul>
-            	<li><img src="images/weixin.jpg" width="64" height="64"></li>
-                <li><img src="images/phone.jpg" width="64" height="64"></li>
+            	<li><img src="{{static_url('images/weixin.jpg')}}" width="64" height="64"></li>
+                <li><img src="{{static_url('images/phone.jpg')}}" width="64" height="64"></li>
                 <li class="rexian">24小时热线<br>13849499216</li>
             </ul>
         </div>
@@ -52,20 +61,22 @@
 	<div class="mainl">
     	<h3>分享我们</h3>
         <ul>
-        	<li><a href="#"><img src="images/icon4.jpg" width="56" height="56"></a></li>
-            <li><a href="#"><img src="images/icon5.jpg" width="56" height="56"></a></li>
-            <li><a href="#"><img src="images/icon6.jpg" width="56" height="56"></a></li>
-            <li><a href="#"><img src="images/icon7.jpg" width="56" height="56"></a></li>
-            <li><a href="#"><img src="images/icon8.jpg" width="56" height="56"></a></li>
+        	<li><a href="#"><img src="{{static_url('images/icon4.jpg')}}" width="56" height="56"></a></li>
+            <li><a href="#"><img src="{{static_url('images/icon5.jpg')}}" width="56" height="56"></a></li>
+            <li><a href="#"><img src="{{static_url('images/icon6.jpg')}}" width="56" height="56"></a></li>
+            <li><a href="#"><img src="{{static_url('images/icon7.jpg')}}" width="56" height="56"></a></li>
+            <li><a href="#"><img src="{{static_url('images/icon8.jpg')}}" width="56" height="56"></a></li>
         </ul>
     </div>
     <div class="mainr">
     	<h3>淘宝店铺</h3>
         <p>
-        	<img src="images/taobao.jpg" width="106" height="24">
+        	<img src="{{static_url('images/taobao.jpg')}}" width="106" height="24">
             <br>
             <a href="http://shop110729021.taobao.com/">http://shop110729021.taobao.com/</a>
         </p>
     </div>
 </div>
 {% include footer.html %}
+</body>
+</html>
