@@ -14,8 +14,8 @@ define("project_path",default=sys.path[0],help="project path")
 
 options.parse_command_line()
 
-URLS =((r'',
-		(r'/?','handler.index.IndexHandler'),
+URLS =((r'www.test.com',
+		(r'/test','handler.index.IndexHandler'),
 	   ),
 )
 

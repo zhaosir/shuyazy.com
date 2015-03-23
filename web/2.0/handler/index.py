@@ -3,10 +3,8 @@
 
 import os
 import sys
-from tornado import web
+import tornado
 from .base import BaseHandler
-
 class IndexHandler(BaseHandler):
 	def get(self):
-		print 'xxxx'
 		self.render('index.html')
