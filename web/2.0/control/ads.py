@@ -4,10 +4,9 @@
 
 import logging
 import setting
-from mongo import mongoConn
+import lib.http as _http
 
 logger = logging.getLogger(__name__)
 
 def get_ads():
-	with mongoConn() as conn:
-		return conn.shuyazy.ads.find()
+	print _http.getApiCloudAppkey()
