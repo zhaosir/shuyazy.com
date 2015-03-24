@@ -3,13 +3,8 @@
 
 COOKIE_SECRET='df61d7e3f7899ad08b051b974763b609'
 
-mongo={
-	'host':'10.0.177.30',
-	'port':27017,
-	'db':'shuyazy'
-}
+#apicloud appid,appkey
+APICLOUD_RESTAPI = 'https://d.apicloud.com/mcm/api/'
+APICLOUD_APPID = 'A6972615554996'
+APICLOUD_APPKEY = '974D0485-D4C7-BEF5-B9E9-54ACC7D5EBCC'
 
-shuya_tabao='http://www.taobao.com'
-shuya_mobile='13849499216'
-shuya_address='河南省漯河市黄河路中段劳动局西邻版权所有'
-shuya_email='shuya@shuyazy.com'
