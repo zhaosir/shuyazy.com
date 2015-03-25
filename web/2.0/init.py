@@ -15,7 +15,9 @@ define("project_path",default=sys.path[0],help="project path")
 options.parse_command_line()
 
 URLS =((r'www\.test\.com',
-		(r'/?|index?|index.html?','handler.index.IndexHandler'),
+		(r'/index.html','handler.index.IndexHandler'),
+		(r'/test','handler.index.TestHandler'),
+		(r'/static/(.)*\.(jpg|bmp|png)\/?','handler.index.ImageHandler')
 	   ),
 )
 
