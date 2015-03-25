@@ -17,6 +17,7 @@ class TestHandler(BaseHandler):
 
 class ImageHandler(BaseHandler):
 	def get(self,picid):
+		print picid
 		self.redirect('http://img0.bdstatic.com/img/image/4a75a05f8041bf84df4a4933667824811426747915.jpg',permanent=True)
 
 class IndexHandler(BaseHandler):
