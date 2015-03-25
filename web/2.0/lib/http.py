@@ -20,7 +20,7 @@ def getApiCloudAppkey():
 
 
 def make_uri(api_uri,params={}):
-	p = json_encode(params)
+	p =json_encode(params) if params else ''
 	api_uri = setting.APICLOUD['restapi']+api_uri
 	return api_uri+quote(p)
 
@@ -43,6 +43,7 @@ def _ansy_apicloud_request(api_uri,method='GET',params={},callback=None,exc_mess
 	else :
 		body = json_encode(params)
 		uri = setting.APICLOUD['restapi']+api_uri
+	print uri
 	handle_req = partial(handle_json_request,callback=callback,exc_message=exc_message)
 	http_client = httpclient.AsyncHTTPClient()
 	return http_client.fetch(uri,

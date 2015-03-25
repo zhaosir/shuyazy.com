@@ -6,7 +6,8 @@ import sys
 import tornado
 from tornado import gen
 from .base import BaseHandler
-from control import ads,classes
+from control import ads,classes,image
+#from  control import *
 
 class TestHandler(BaseHandler):
 	@gen.coroutine
@@ -16,9 +17,12 @@ class TestHandler(BaseHandler):
 		self.write('ok')
 
 class ImageHandler(BaseHandler):
+	@gen.coroutine
 	def get(self,picid):
-		print picid
-		self.redirect('http://img0.bdstatic.com/img/image/4a75a05f8041bf84df4a4933667824811426747915.jpg',permanent=True)
+		img =yield image.getImagebyId(picid)
+		if img:
+			url = img['file']['url']
+			self.redirect(url,permanent=True)
 
 class IndexHandler(BaseHandler):
 	def get(self):

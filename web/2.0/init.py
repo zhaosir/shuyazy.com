@@ -17,7 +17,7 @@ options.parse_command_line()
 URLS =((r'www\.test\.com',
 		(r'/index.html','handler.index.IndexHandler'),
 		(r'/test','handler.index.TestHandler'),
-		(r'/static/(?:[0-9a-zA-z]*\/)*(\w{1,})\.(?:jpg|png|bmp)\/?','handler.index.ImageHandler')
+		(r'/apicloud/(?:[0-9a-zA-z]*\/)*(\w{1,})\.(?:jpg|png|bmp)\/?','handler.index.ImageHandler')
 	   ),
 )
 
