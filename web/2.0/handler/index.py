@@ -16,7 +16,7 @@ class TestHandler(BaseHandler):
 		print cc
 		self.write('ok')
 
-class ImageHandler(BaseHandler):
+class ApiCloudFileHandler(BaseHandler):
 	@gen.coroutine
 	def get(self,picid):
 		img =yield image.getImagebyId(picid)
