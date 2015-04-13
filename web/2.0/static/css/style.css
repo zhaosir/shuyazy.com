@@ -13,10 +13,11 @@ a:hover{ color:#333;}
 .nav .icon1,.nav .icon2{ float:right; margin-left:70px;}
 
 /*banner*/
-.banner{ width:1002px; height:332px; margin:0 auto;}
+.banner{ width:1002px; margin:0 auto;}
+.banner .imgbox{height:316px; margin:0 auto;overflow:hidden;}
 
-.banner span{ width:24px; height:4px; background:#BBBBBB; display:inline-block; float:left; margin-left:10px;}
-.banner .huadong1{ margin-left:44%; background:#81B92D;}
+.banner span{ width:24px; height:4px; background:#BBBBBB; display:inline-block; float:left; margin:6px 10px auto auto;}
+.banner .active{ margin-left:44%; background:#81B92D;}
 
 /*con区域*/
 .con{ width:1002px; height:220px; padding-top:47px; margin:0 auto;}

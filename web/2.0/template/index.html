@@ -4,15 +4,19 @@
 <meta charset="utf-8">
 <title>舒雅纸业</title>
 <link type="text/css" rel="stylesheet" href="{{static_url('css/style.css')}}">
-</head>
 
 <body>
 {% include header.html %}
+<script type="text/javascript" src="{{static_url('js/imgshow.js')}}"></script>
 <div class="banner">
-	<ul class="bannerin">
-    	<li class="first_banner"><a href="#"><img src="{{static_url('images/banner.jpg')}}" width="1002" height="316"></a></li>
-    </ul>
-    <span class="huadong1"></span>
+	<div class="imgbox">
+		<ul class="bannerin">
+			<li class="first_banner"><a href="#"><img src="{{static_url('images/banner.jpg')}}" width="1002" height="316"></a></li>
+			<li><a href="#"><img src="{{static_url('images/banner.jpg')}}" width="1002" height="316"></a></li>
+			<li><a href="#"><img src="{{static_url('images/banner.jpg')}}" width="1002" height="316"></a></li>
+		</ul>
+	</div>
+    <span class="active"></span>
     <span></span>
     <span></span>
     <span></span>
