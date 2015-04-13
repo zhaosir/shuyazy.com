@@ -17,6 +17,10 @@ options.parse_command_line()
 URLS =((r'www\.test\.com',
 		(r'(?:|/index.html|/index)\/?','handler.index.IndexHandler'),
 		(r'/test','handler.index.TestHandler'),
+		(r'/detail','handler.index.DetailHandler'),
+		(r'/talk','handler.index.TalkHandler'),
+		(r'/about','handler.index.AboutHandler'),
+		(r'/aboutus','handler.index.AboutusHandler'),
 		(r'/apicloud/(?:[0-9a-zA-z]*\/)*(\w{1,})\.(?:\w{1,4})\/?','handler.index.ApiCloudFileHandler')
 	   ),
 )

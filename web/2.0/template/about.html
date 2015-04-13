@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>舒雅纸业</title>
-<link type="text/css" rel="stylesheet" href="css/about.css">
+<link type="text/css" rel="stylesheet" href="{{static_url('css/about.css')}}">
 </head>
 
 <body>
 {% include header.html %}
 <div class="con">
-	｛% include left.html %｝
+	{% include left.html %}
     <div class="conrr">
     	<h2 class="lianxi">联系我们</h2>
         <ul class="content">
@@ -23,7 +23,7 @@
             <li>地址：漯河市黄河路中段劳动局西邻</li>
         </ul>
         <div class="erweima">
-        	<img src="images/about/erweima.jpg" width="180" height="180">
+        	<img src="{{static_url('images/about/erweima.jpg')}}" width="180" height="180">
         </div>
     </div>
     <div class="conrrbg"></div>

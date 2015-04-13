@@ -29,3 +29,19 @@ class IndexHandler(BaseHandler):
 		self.render('index.html')
 
 
+
+class DetailHandler(BaseHandler):
+	def get(self):
+		self.render('detail.html')
+
+class TalkHandler(BaseHandler):
+	def get(self):
+		self.render('talk.html')
+
+class AboutHandler(BaseHandler):
+	def get(self):
+		self.render('about.html')
+
+class AboutusHandler(BaseHandler):
+	def get(self):
+		self.render('aboutus.html')
