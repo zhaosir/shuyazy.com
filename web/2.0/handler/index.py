@@ -26,13 +26,17 @@ class ApiCloudFileHandler(BaseHandler):
 
 class IndexHandler(BaseHandler):
 	def get(self):
-		self.render('index.html')
+		banner = list()
+		banner.append({"url":"/products/1","img":"/static/images/banner.jpg?v=e9a67bb4f4c57cb49a2c4d98fb7df462"})
+		banner.append({"url":"/products/1","img":"/static/images/banner.jpg?v=e9a67bb4f4c57cb49a2c4d98fb7df462"})
+		self.render('index.html',banner=banner)
 
 
 
-class DetailHandler(BaseHandler):
-	def get(self):
-		self.render('detail.html')
+class ProductsHandler(BaseHandler):
+	def get(self,tid):
+		print tid
+		self.render('products.html')
 
 class TalkHandler(BaseHandler):
 	def get(self):
@@ -40,8 +44,8 @@ class TalkHandler(BaseHandler):
 
 class AboutHandler(BaseHandler):
 	def get(self):
-		self.render('about.html')
-
-class AboutusHandler(BaseHandler):
-	def get(self):
 		self.render('aboutus.html')
+
+class ContactHandler(BaseHandler):
+	def get(self):
+		self.render('contact.html')
