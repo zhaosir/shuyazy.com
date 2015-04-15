@@ -54,6 +54,16 @@ def get_products_top(p,size):
 	products =yield get_prodects(params=params)
 	raise gen.Return(products)
 
+@gen.coroutine
+def update_product_hot(pid):
+	params = {'$inc':{'hot':1},'_method':'PUT'}
+	result = yield _http.ansy_apicloud_request('products/'+pid,
+			method='POST',
+			params=params,
+			exc_message='')
+	raise gen.Return(result)
+
+
 def get_prodects(**params):
 	return _http.ansy_apicloud_request('products?filter=',
 			method='GET',

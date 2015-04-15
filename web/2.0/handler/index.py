@@ -12,7 +12,7 @@ from control import api,image
 class TestHandler(BaseHandler):
 	@gen.coroutine
 	def get(self):
-		cc = yield api.get_products_new(1,10)
+		cc = yield api.update_product_hot('5510bf14efb5aeb1337143ac')
 		print cc
 		self.send_json(cc)
 
