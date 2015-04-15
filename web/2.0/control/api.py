@@ -1,0 +1,62 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+
+import logging
+import setting
+import lib.http as _http
+from tornado import gen
+
+logger = logging.getLogger(__name__)
+
+@gen.coroutine
+def get_ads():
+	params = {'where':{'state':True},'order':'updatedAt DESC','skip':0,'limit':20}
+	ads =yield _http.ansy_apicloud_request('ads?filter=',
+			method='GET',
+			params = params,
+			exc_message='获取广告数据失败')
+	raise gen.Return(ads)
+
+@gen.coroutine
+def get_banners():
+	params = {'where':{'state':True,'order':'updateAt DESC','skip':0,'limit':5}}
+	banners = yield _http.ansy_apicloud_request('banners?filter=',
+			method='GET',
+			params=params,
+			exc_message='')
+	raise gen.Return(banners)
+
+@gen.coroutine
+def get_conf():
+	params = {}
+	conf = yield _http.ansy_apicloud_request('conf?filter=',
+			method='GET',
+			params=params,
+			exc_message='')
+	raise gen.Return(conf)
+
+@gen.coroutine
+def get_products(cid,p,size):
+	params = {'where':{'state':True,'class_id':cid},'order':'hot DESC','skip':(p-1)*size,'limit':size}
+	products =yield get_prodects(params=params)
+	raise gen.Return(products)
+
+@gen.coroutine
+def get_products_new(p,size):
+	params = {'where':{'state':True},'order':'createdAt DESC','skip':(p-1)*size,'limit':size}
+	products =yield  get_prodects(params=params)
+	raise gen.Return(products)
+
+@gen.coroutine
+def get_products_top(p,size):
+	params = {'where':{'state':True},'order':'hot DESC','skip':(p-1)*size,'limit':size}
+	products =yield get_prodects(params=params)
+	raise gen.Return(products)
+
+def get_prodects(**params):
+	return _http.ansy_apicloud_request('products?filter=',
+			method='GET',
+			params=params,
+			exc_message='')
+

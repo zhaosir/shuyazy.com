@@ -6,13 +6,13 @@ import sys
 import tornado
 from tornado import gen
 from .base import BaseHandler
-from control import ads,classes,image
+from control import api,image
 #from  control import *
 
 class TestHandler(BaseHandler):
 	@gen.coroutine
 	def get(self):
-		cc = yield ads.get_ads()
+		cc = yield api.get_products_new(1,10)
 		print cc
 		self.write('ok')
 
@@ -27,8 +27,11 @@ class ApiCloudFileHandler(BaseHandler):
 class IndexHandler(BaseHandler):
 	def get(self):
 		banner = list()
-		banner.append({"url":"/products/1","img":"/static/images/banner.jpg?v=e9a67bb4f4c57cb49a2c4d98fb7df462"})
-		banner.append({"url":"/products/1","img":"/static/images/banner.jpg?v=e9a67bb4f4c57cb49a2c4d98fb7df462"})
+		banner.append({"url":"/products/1","img":"/apicloud/images/552e0f7ad90c83341342b408.jpg"})
+		banner.append({"url":"/products/1","img":"/apicloud/images/552e0f9447918c3a13a90e53.jpg"})
+		banner.append({"url":"/products/1","img":"/apicloud/images/552e0f9ad90c83341342b409.jpg"})
+		banner.append({"url":"/products/1","img":"/apicloud/images/552e0f9e24299e371370a7fd.jpg"})
+		banner.append({"url":"/products/1","img":"/apicloud/images/552e0fe724299e371370a7fe.jpg"})
 		self.render('index.html',banner=banner)
 
 
