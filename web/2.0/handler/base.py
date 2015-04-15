@@ -3,6 +3,19 @@
 
 import logging
 from tornado import web,gen
+import json
+import re
 
 class BaseHandler(web.RequestHandler):
-	pass
+	def send_json(self,response):
+		date2str = lambda obj:obj.isoformat() if isinstance(obj,datetime.datetime) else None
+		resp = json.dumps(response,default = date2str)
+		callback = self.get_argument('callback',None)
+		if callback:
+			callback = re.sub(r'[^\w\.]', '', callback)
+			self.set_header('Content-Type', 'text/javascript; charet=UTF-8')
+			resp = '%s(%s)' % (callback, resp)
+		else:
+			self.set_header('Content-Type', 'application/json')
+		self.write(resp)
+		self.finish()

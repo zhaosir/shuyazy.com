@@ -14,7 +14,7 @@ class TestHandler(BaseHandler):
 	def get(self):
 		cc = yield api.get_products_new(1,10)
 		print cc
-		self.write('ok')
+		self.send_json(cc)
 
 class ApiCloudFileHandler(BaseHandler):
 	@gen.coroutine
