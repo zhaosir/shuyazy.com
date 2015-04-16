@@ -14,7 +14,7 @@ define("project_path",default=sys.path[0],help="project path")
 
 options.parse_command_line()
 
-URLS =((r'www\.test\.com',
+URLS =((r'.*\.test.*\.com',
 		(r'(?:|/index.html|/index)\/?','handler.index.IndexHandler'),
 		(r'/test','handler.index.TestHandler'),
 		(r'/products\/?([0-9a-z]+)?','handler.index.ProductsHandler'),
