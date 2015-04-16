@@ -28,4 +28,4 @@ class BaseHandler(web.RequestHandler):
 				return pagecount +1
 			return pagecount
 		else:
-			return 1
+			return 0

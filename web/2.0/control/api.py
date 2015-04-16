@@ -37,16 +37,18 @@ def get_conf():
 	raise gen.Return(conf)
 
 @gen.coroutine
-def get_products(cid,p,size):
+def get_products_class(cid,p,size):
 	params = {'where':{'state':True,'class_id':cid},'order':'hot DESC','skip':(p-1)*size,'limit':size}
 	products =yield get_products(params=params)
-	raise gen.Return(products)
+	count = yield get_products_count(params=params)
+	raise gen.Return((count,products))
 
 @gen.coroutine
 def get_products_new(p,size):
 	params = {'where':{'state':True},'order':'createdAt DESC','skip':(p-1)*size,'limit':size}
 	products =yield  get_products(params=params)
-	raise gen.Return(products)
+	count = yield get_products_count(params=params)
+	raise gen.Return((count,products))
 
 @gen.coroutine
 def get_products_top(p,size):

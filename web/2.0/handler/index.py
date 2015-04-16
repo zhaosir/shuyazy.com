@@ -7,6 +7,7 @@ import tornado
 from tornado import gen
 from .base import BaseHandler
 from control import api,image
+import re
 #from  control import *
 
 class TestHandler(BaseHandler):
@@ -20,8 +21,12 @@ class ApiCloudFileHandler(BaseHandler):
 	@gen.coroutine
 	def get(self,picid):
 		img =yield image.getImagebyId(picid)
+		size = self.get_argument('size',None)
 		if img:
 			url = img['file']['url']
+			url = re.compile(r'http://.*\.com',re.IGNORECASE).sub('http://78rfbc.com2.z0.glb.qiniucdn.com',url)
+			if size:
+				url = url +'!' + size
 			self.redirect(url,permanent=True)
 
 class IndexHandler(BaseHandler):
@@ -41,7 +46,14 @@ class ProductsHandler(BaseHandler):
 	def get(self,tid):
 		p = int(self.get_argument('p',1))
 		size = 9
-		products = yield api.get_products_top(p=p,size=size)
+		if tid:
+			if tid == 'new':
+				products = yield api.get_products_new(p=p,size=size)
+			else:
+				tid = int(tid)
+				products = yield api.get_products_class(cid=tid,p=p,size=size)
+		else:
+			products = yield api.get_products_top(p=p,size=size)
 		self.render('products.html',products=products[1],pagecount=self.get_pagecount(products[0]['count'],size))
 
 class TalkHandler(BaseHandler):

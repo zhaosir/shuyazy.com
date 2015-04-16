@@ -34,7 +34,7 @@
     	<ul class="productone">
 			{% for p in products %}
         	<li>
-            	<a href="#"><img src="/apicloud/images/{{p['image_id']}}.jpg" width="260" height="148"></a>
+            	<a href="#"><img src="/apicloud/images/{{p['image_id']}}.jpg?size=260" width="260" height="148"></a>
                 <h4>{{p['name']}}</h4>
             </li>
 			{% end %}
