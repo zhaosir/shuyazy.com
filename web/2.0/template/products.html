@@ -9,7 +9,12 @@
 <body>
 {% include header.html %}
 <script type="text/javascript" src="{{static_url('js/jquery.pager.js')}}"></script>
+<script type="text/javascript" src="{{static_url('js/jquery.lib.js')}}"></script>
 <script type="text/javascript" src="{{static_url('js/products.js')}}"></script>
+<script type="text/javascript">
+	var pagecount ={{ pagecount }};
+	var pageindex = $.get_argument('p',1);
+</script>
 <div class="con">
 	<div class="topborder"></div>
     <div class="leftbg"></div>

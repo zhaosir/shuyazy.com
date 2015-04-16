@@ -5,6 +5,7 @@ import logging
 from tornado import web,gen
 import json
 import re
+from math import floor  
 
 class BaseHandler(web.RequestHandler):
 	def send_json(self,response):
@@ -19,3 +20,12 @@ class BaseHandler(web.RequestHandler):
 			self.set_header('Content-Type', 'application/json')
 		self.write(resp)
 		self.finish()
+
+	def get_pagecount(self,total,size):
+		if total > size:
+			pagecount =  int(floor(total/float(size)))
+			if pagecount * size < total:
+				return pagecount +1
+			return pagecount
+		else:
+			return 1

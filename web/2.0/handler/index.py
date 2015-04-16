@@ -13,8 +13,8 @@ class TestHandler(BaseHandler):
 	@gen.coroutine
 	def get(self):
 		cc = yield api.get_products_top(p=1,size=9)
-		print len(cc)
-		self.send_json(cc)
+		print cc
+		self.send_json(cc[1])
 
 class ApiCloudFileHandler(BaseHandler):
 	@gen.coroutine
@@ -39,9 +39,10 @@ class IndexHandler(BaseHandler):
 class ProductsHandler(BaseHandler):
 	@gen.coroutine
 	def get(self,tid):
-		print tid
-		products = yield api.get_products_top(p=1,size=9)
-		self.render('products.html',products=products)
+		p = int(self.get_argument('p',1))
+		size = 9
+		products = yield api.get_products_top(p=p,size=size)
+		self.render('products.html',products=products[1],pagecount=self.get_pagecount(products[0]['count'],size))
 
 class TalkHandler(BaseHandler):
 	def get(self):
