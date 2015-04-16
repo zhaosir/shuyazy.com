@@ -44,7 +44,7 @@
 
     // render and return the pager with the supplied options
     function renderpager(pagenumber, pagecount, buttonClickCallback) {
-
+		if(pagecount<=0)return;
         // setup $pager to hold render
         var $pager = $('<ul class="pages"></ul>');
 
