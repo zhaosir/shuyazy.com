@@ -64,7 +64,7 @@ def update_product_hot(pid):
 	raise gen.Return(result)
 
 
-def get_prodects(**params):
+def get_prodects(params):
 	return _http.ansy_apicloud_request('products?filter=',
 			method='GET',
 			params=params,

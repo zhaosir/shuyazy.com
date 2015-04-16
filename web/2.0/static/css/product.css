@@ -21,32 +21,52 @@ textarea{resize:none}
 
 
 /*con区域*/
-.con{ width:1002px; height:860px; margin:0 auto;}
+.con{ width:1002px; height:780px; margin:0 auto;}
 .con .topborder{ width:1002px; height:2px; background:url(../images/line.jpg) repeat-x;}
 .con .leftbg{ width:8px; height:470px; background:url(../images/product/leftbg_left.jpg) no-repeat; float:left; margin-top:22px;}
 .con .centerbg{ width:104px; height:470px; background:url(../images/product/leftbg_center.jpg) repeat-x; margin-top:22px; float:left;}
 .con .centerbg .connav li{ width:104px; height:58px; text-align:center; line-height:58px;}
 .con .centerbg .connav li a{ font-size:20px; color:#FFF;}
 .con .centerbg .connav li a:hover{ color:#333;}
-.con .product{ width:872px; height:834px; background:#FFF; float:left; padding:24px 0 0 18px;}
-.con .product .productone{ height:260px;}
-.con .product .productone li{ float:left; margin-left:34px; width:262px; height:210px;}
+.con .product{ width:872px; height:700px; background:#FFF; float:left; padding:24px 0 0 0px;}
+.con .product .productone{ height:600px;}
+.con .product .productone li{ float:left; margin-left:25px; width:262px; height:200px;}
 .con .product .productone li a img{ border:1px solid #545252;}
 .con .product .productone li h4{ color:#B6B6B7;}
 
-.con .product .lastpage,.con .product .nextpage{ width:34px; height:34px; float:left; margin-left:130px; background:#EDEDED; border:1px solid #D5D5D5;}
-.con .product .lastpage a,.con .product .nextpage a{ width:34px; height:34px; display:block;}
-.con .product .nextpage{ margin-left:10px;}
-.con .product .page li{ width:34px; height:34px; float:left; margin-left:10px; background:#EDEDED; border:1px solid #D5D5D5;}
-.con .product .page li a{ width:34px; height:34px; display:block; line-height:34px; text-align:center; color:#333;}
-.con .product .page li a:hover{ background:#81B92D;}
-.con .product .tiaozhuan{ height:34px; line-height:34px; text-align:center; float:left; color:#333; font-size:14px; font-weight:normal; margin-left:10px;}
-.con .product textarea{ width:40px; height:34px; line-height:34px; padding-left:6px;  background:#EDEDED; border:1px solid #D5D5D5; float:left;}
-.con .product span a{ width:34px; height:34px; line-height:34px; text-align:center; background:#EDEDED; border:1px solid #D5D5D5; margin-left:10px; font-size:16px; display:block; float:left;}
 
+#jpage {
+		padding:30px 0 0 160px;
+}
+#jpage ul.pages {
+	display:block;
+	border:none;
+	text-transform:uppercase;
+	font-size:16px;
+	padding:0;
+}
 
+#jpage ul.pages li {
+	width:34px; height:34px; float:left; margin-left:10px; background:#EDEDED; border:1px solid #ccc;
+	display:block; line-height:34px; text-align:center; color:#333;
+}
 
+#jpage ul.pages li:hover {border:1px solid #003f7e;}
 
+#jpage ul.pages li.pgEmpty {
+	border:1px solid #eee;
+	color:#FFFFFF;
+}
+
+#jpage ul.pages li.pgCurrent {
+	font-weight:700;
+	background:#81B92D;
+}
+
+#jpage ul.pages li .first{}
+#jpage ul.pages li .prev{}
+#jpage ul.pages li .next}
+#jpage ul.pages li .last{}
 
 
 

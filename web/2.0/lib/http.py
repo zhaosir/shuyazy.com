@@ -12,7 +12,6 @@ from tornado import httpclient
 from tornado.httputil import url_concat
 from tornado.escape import json_encode
 
-
 def getApiCloudAppkey():
 	now = int(time.time()*1000)
 	appkey = setting.APICLOUD['appid'] + 'UZ' + setting.APICLOUD['appkey'] + 'UZ'+ str(now) 
@@ -43,7 +42,6 @@ def _ansy_apicloud_request(api_uri,method='GET',params={},callback=None,exc_mess
 	else :
 		body = json_encode(params)
 		uri = setting.APICLOUD['restapi']+api_uri
-	print uri
 	handle_req = partial(handle_json_request,callback=callback,exc_message=exc_message)
 	http_client = httpclient.AsyncHTTPClient()
 	return http_client.fetch(uri,

@@ -12,8 +12,8 @@ from control import api,image
 class TestHandler(BaseHandler):
 	@gen.coroutine
 	def get(self):
-		cc = yield api.update_product_hot('5510bf14efb5aeb1337143ac')
-		print cc
+		cc = yield api.get_products_top(p=1,size=9)
+		print len(cc)
 		self.send_json(cc)
 
 class ApiCloudFileHandler(BaseHandler):
@@ -37,9 +37,11 @@ class IndexHandler(BaseHandler):
 
 
 class ProductsHandler(BaseHandler):
+	@gen.coroutine
 	def get(self,tid):
 		print tid
-		self.render('products.html')
+		products = yield api.get_products_top(p=1,size=9)
+		self.render('products.html',products=products)
 
 class TalkHandler(BaseHandler):
 	def get(self):
