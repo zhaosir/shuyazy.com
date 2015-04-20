@@ -21,7 +21,7 @@ class ApiCloudFileHandler(BaseHandler):
 	@gen.coroutine
 	def get(self,picid):
 		img =yield image.getImagebyId(picid)
-		size = self.get_argument('size',None)
+		size = self.get_argument('size',"1001")
 		if img:
 			url = img['file']['url']
 			url = re.compile(r'http://.*\.com',re.IGNORECASE).sub('http://78rfbc.com2.z0.glb.qiniucdn.com',url)
