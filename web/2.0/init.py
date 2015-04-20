@@ -21,7 +21,8 @@ URLS =((r'.*shuyazy\.com|.*test.*\.com',
 		(r'/talk','handler.index.TalkHandler'),
 		(r'/about','handler.index.AboutHandler'),
 		(r'/contact','handler.index.ContactHandler'),
-		(r'/apicloud/(?:[0-9a-zA-z]*\/)*(\w{1,})\.(?:\w{1,4})\/?','handler.index.ApiCloudFileHandler')
+		(r'/apicloud/(?:[0-9a-zA-z]*\/)*(\w{1,})\.(?:\w{1,4})\/?','handler.index.ApiCloudFileHandler'),
+		(r'/api/conf','handler.api.ConfHandler')
 	   ),
 )
 

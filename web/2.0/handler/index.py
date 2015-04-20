@@ -13,9 +13,9 @@ import re
 class TestHandler(BaseHandler):
 	@gen.coroutine
 	def get(self):
-		cc = yield api.get_products_top(p=1,size=9)
+		cc = yield api.get_conf()
 		print cc
-		self.send_json(cc[1])
+		self.send_json(cc)
 
 class ApiCloudFileHandler(BaseHandler):
 	@gen.coroutine

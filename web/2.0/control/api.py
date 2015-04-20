@@ -30,7 +30,7 @@ def get_banners():
 @gen.coroutine
 def get_conf():
 	params = {}
-	conf = yield _http.ansy_apicloud_request('conf?filter=',
+	conf = yield _http.ansy_apicloud_request('conf/551117e163232a2308b2562e',
 			method='GET',
 			params=params,
 			exc_message='')
@@ -38,7 +38,7 @@ def get_conf():
 
 @gen.coroutine
 def get_products_class(cid,p,size):
-	params = {'where':{'state':True,'class_id':cid},'order':'hot DESC','skip':(p-1)*size,'limit':size}
+	params = {'where':{'state':True,'class_id':cid},'order':'hot DESC,updatedAt DESC','skip':(p-1)*size,'limit':size}
 	products =yield get_products(params=params)
 	count = yield get_products_count(params=params)
 	raise gen.Return((count,products))
@@ -52,7 +52,7 @@ def get_products_new(p,size):
 
 @gen.coroutine
 def get_products_top(p,size):
-	params = {'where':{'state':True},'order':'hot DESC','skip':(p-1)*size,'limit':size}
+	params = {'where':{'state':True},'order':'hot DESC,updateAt DESC','skip':(p-1)*size,'limit':size}
 	products =yield get_products(params=params)
 	count = yield get_products_count(params=params)
 	raise gen.Return((count,products))
