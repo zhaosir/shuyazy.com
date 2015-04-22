@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body{ margin:0; padding:0; background:#EAEAEA; font-family:"宋体"; position:relative;}
+div,span,p,h1,h2,h3,h4,h5,ul,li,img,ol,dl,dt,dd,table,tr,td,a,button,input{ margin:0; padding:0; list-style:none; border:0;}
+a{ text-decoration:none;}
+a:hover{ color:#333;}
+
+
+/*导航*/
+.nav{ width:958px; height:110px; margin:0 auto; padding-top:30px; padding-left:40px; padding-right:4px;}
+.logo{ float:left;}
+.nav .icon{ float:right; margin-left:30px;}
+.nav .icon a{width:83px;height:70px;position: relative;display: inline-block;}
+.icon_index {background:url(../images/icon1.png) no-repeat 0px 0px;}
+.icon_index:hover{	background:url(../images/icon1_hover.png) no-repeat 0px 0px;}
+.icon_products {background:url(../images/icon2.png) no-repeat 0px 0px;}
+.icon_products:hover{	background:url(../images/icon2_hover.png) no-repeat 0px 0px;}
+.icon_about {background:url(../images/icon3.png) no-repeat 0px 0px;}
+.icon_about:hover{	background:url(../images/icon3_hover.png) no-repeat 0px 0px;}
+
+
+/*footer区域*/
+.footer{ width:1002px; height:70px; background:url(../images/line.jpg) repeat-x left top; margin:0 auto; padding-top:8px;}
+.footer p{ width:1002px; text-align:center; line-height:26px; font-size:14px; color:#999999;}
+
+/*rightline联系*/
+.rightline{ position:absolute; right:8%; bottom:164px; position:fixed;}
+
+
+
+
+
+
+
+
+
+
