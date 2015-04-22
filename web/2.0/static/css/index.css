@@ -11,7 +11,7 @@
 #btnlist .active{background:#81B92D;}
 
 /*con区域*/
-.con{ width:1002px; height:220px; margin:0 auto;}
+.con{ width:1002px; height:220px; margin:47px auto auto auto;}
 .con .conl{ width:616px; height:218px; float:left;}
 .con .conl .conl_l{ width:4px; height:218px; background:url(../images/conl.jpg) no-repeat left center; float:left;}
 .con .conl .conl_l2{ width:4px; height:218px; background:url(../images/conl.jpg) no-repeat left center; float:left; margin-left:12px;}
