@@ -10,7 +10,15 @@ a:hover{ color:#333;}
 /*导航*/
 .nav{ width:958px; height:110px; margin:0 auto; padding-top:30px; padding-left:40px; padding-right:4px;}
 .logo{ float:left;}
-.nav .icon1,.nav .icon2{ float:right; margin-left:70px;}
+.nav .icon{ float:right; margin-left:30px;}
+.nav .icon a{width:83px;height:70px;position: relative;display: inline-block;}
+.icon_index {background:url(../images/icon1.png) no-repeat 0px 0px;}
+.icon_index:hover{	background:url(../images/icon1_hover.png) no-repeat 0px 0px;}
+.icon_products {background:url(../images/icon2.png) no-repeat 0px 0px;}
+.icon_products:hover{	background:url(../images/icon2_hover.png) no-repeat 0px 0px;}
+.icon_about {background:url(../images/icon3.png) no-repeat 0px 0px;}
+.icon_about:hover{	background:url(../images/icon3_hover.png) no-repeat 0px 0px;}
+
 
 /*banner*/
 .banner{ width:1002px; margin:0 auto;}
@@ -20,7 +28,7 @@ a:hover{ color:#333;}
 #btnlist .active{background:#81B92D;}
 
 /*con区域*/
-.con{ width:1002px; height:220px; padding-top:47px; margin:0 auto;}
+.con{ width:1002px; height:220px; margin:0 auto;}
 .con .conl{ width:616px; height:218px; float:left;}
 .con .conl .conl_l{ width:4px; height:218px; background:url(../images/conl.jpg) no-repeat left center; float:left;}
 .con .conl .conl_l2{ width:4px; height:218px; background:url(../images/conl.jpg) no-repeat left center; float:left; margin-left:12px;}
